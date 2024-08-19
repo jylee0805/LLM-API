@@ -89,7 +89,7 @@ function App() {
         setQA((prev) => {
           return prev.map((item, index) => {
             if (item.question == input && item.id == index) {
-              return { ...item, answer: data.choices[0].message.content };
+              return { ...item, answer: "Please fill response" };
             }
             return item;
           });
